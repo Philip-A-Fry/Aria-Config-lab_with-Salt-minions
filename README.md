@@ -20,5 +20,7 @@ Once everything is up you can load the web UI at [http://localhost:8080](http://
 If the Salt Master container fails to stay up, run everything in the foreground: `docker compose up`
 ...then go accept the Master key in the RaaS web-UI. In my experience the Salt Master container will stay up once the master key has been accepted. 
 
+You MUST accept the Master key first before Minion keys will appear (and can be accepted). 
+
 ## Factory reset
 To reset your lab to a "like new" state run `./reset.sh`. and/or run `docker compose down`
