@@ -10,7 +10,7 @@ RUN apt-get update && \
 RUN apt-get update && apt-get install -y iputils-ping net-tools netcat && rm -rf /var/lib/apt/lists/*
 
 # Set the Salt Master IP
-RUN echo "master: aria-config-docker-lab-salt-master-1" >> /etc/salt/minion
+RUN echo "master: aria-config-lab_with-5-salt-minions-salt-master" >> /etc/salt/minion
 
 # Start the Salt Minion service
 CMD ["salt-minion", "-l", "info"]
