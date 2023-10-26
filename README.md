@@ -6,6 +6,7 @@ Project to help run [Aria Automation Config](https://www.vmware.com/products/ari
 
 ## Setup
 To get started download the `*.tar` installable for el9 and place it in root of the project. Then run the `prep.sh` script. This will unpack the installer tar into the proper locations and will build an `.env` file for docker.
+I've found it helpful to first run `docker compose build` but this may not be obligatory...
 Once that is completed run `docker compose up -d`. After the containers are started it will take about 2 minutes for first time bootstrapping to complete.
 
 Once everything is up you can load the web UI at [http://localhost:8080](http://localhost:8080)
