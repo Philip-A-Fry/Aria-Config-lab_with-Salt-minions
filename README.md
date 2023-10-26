@@ -1,5 +1,5 @@
 # Aria Config Docker Lab
-Inspired by (ok stolen from) seandjones92's project: https://github.com/seandjones92/Aria-Config-Docker-Lab/tree/main
+Inspired by (ok, stolen from) seandjones92's project: https://github.com/seandjones92/Aria-Config-Docker-Lab/tree/main
 - Added code to also deploy 5x Salt Minions (Ubuntu 22 containers)
 
 Project to help run [Aria Automation Config](https://www.vmware.com/products/aria-automation/saltstack-config.html) in docker for testing and reference purposes. This assumes you have already paid for, or are otherwise entitled, to the installables for this product at [VMware Customer Connect](https://customerconnect.vmware.com/home). Environments created and managed by this project are not fit for production usage or anything resembling production usage, this is simply for self reference labs.
