@@ -11,6 +11,7 @@ Project to help run [Aria Automation Config](https://www.vmware.com/products/ari
 - Then run the `prep.sh` script. This will unpack the installer tar into the proper locations and will build an `.env` file for docker.
 - I've found it helpful to first run `docker compose build` but this may not be obligatory
 - Once all that is completed, run `docker compose up -d`. Once the containers are started it will take about 2-3 minutes for first time bootstrapping to complete.
+- Default creds for the RaaS web-UI:  root / salt 
 
 Once everything is up you can load the web UI at [http://localhost:8080](http://localhost:8080)
 
