@@ -1,0 +1,35 @@
+version: '3'
+services:
+  salt-minion-1:
+    image: salt-minion-image
+    container_name: salt-minion-1
+    networks:
+      - aria-config-docker-lab_default
+
+  salt-minion-2:
+    image: salt-minion-image
+    container_name: salt-minion-2
+    networks:
+      - aria-config-docker-lab_default
+
+  salt-minion-3:
+    image: salt-minion-image
+    container_name: salt-minion-3
+    networks:
+      - aria-config-docker-lab_default
+
+  salt-minion-4:
+    image: salt-minion-image
+    container_name: salt-minion-4
+    networks:
+      - aria-config-docker-lab_default
+
+  salt-minion-5:
+    image: salt-minion-image
+    container_name: salt-minion-5
+    networks:
+      - aria-config-docker-lab_default
+
+networks:
+  aria-config-docker-lab_default:
+    external: true
