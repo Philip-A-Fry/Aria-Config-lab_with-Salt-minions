@@ -1,0 +1,68 @@
+version: '3'
+services:
+
+  postgres:
+    image: postgres:15.4
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASS}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7.2
+    volumes:
+      - ./data/redis:/usr/local/etc/redis
+
+  raas:
+    platform: "linux/amd64"
+    build:
+      context: ./build/raas
+      args:
+        filename: ${RAAS_RPM_NAME}
+    command: "-l debug"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data/raas:/etc/raas
+    depends_on:
+      - postgres
+      - redis
+
+  salt-master:
+    build:
+      context: ./build/salt-master
+      args:
+        plugin_name: ${MASTER_PLUGIN_NAME}
+        salt_version: 3005.3
+    command: "-l debug"
+    volumes:
+      - ./data/master:/etc/salt
+    depends_on:
+      - raas
+
+  salt-minion-1:
+    build:
+      context: ./build/salt-minions
+    container_name: salt-minion-1
+
+  salt-minion-2:
+    build:
+      context: ./build/salt-minions
+    container_name: salt-minion-2
+
+  salt-minion-3:
+    build:
+      context: ./build/salt-minions
+    container_name: salt-minion-3
+
+  salt-minion-4:
+    build:
+      context: ./build/salt-minions
+    container_name: salt-minion-4
+
+  salt-minion-5:
+    build:
+      context: ./build/salt-minions
+    container_name: salt-minion-5
+
