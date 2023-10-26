@@ -13,6 +13,7 @@ Once everything is up you can load the web UI at [http://localhost:8080](http://
 
 ## Troubleshooting
 !! Note - this has only been successfully tested on a Apple Silicon Mac!! It may or may not work on an Docker host with an Intel CPU. 
+
 If the Salt Master container fails to stay up, run everything in the foreground: `docker compose up`
 ...then go accept the Master key in the RaaS web-UI. In my experience the Salt Master container will stay up once the master key has been accepted. 
 
