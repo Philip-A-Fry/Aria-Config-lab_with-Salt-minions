@@ -6,7 +6,8 @@ Project to help run [Aria Automation Config](https://www.vmware.com/products/ari
 
 ## Setup
 - To get started, download the `*.tar.gz` installer for EL9 from [VMware Customer Connect](https://customerconnect.vmware.com/home), then extract the `*.tar` file from it.  
-- Place the `*.tar` file in the root of the project - the "Aria-Config-lab_with-5-Salt-minions" directory.  
+- Place the `*.tar` file in the root of the project - the "Aria-Config-lab_with-5-Salt-minions" directory.
+- Run the command (on Linux / macOS) to make the two bash script executable: `chmod +x reset.sh && chmod +x prep.sh`
 - Then run the `prep.sh` script. This will unpack the installer tar into the proper locations and will build an `.env` file for docker.
 - I've found it helpful to first run `docker compose build` but this may not be obligatory
 - Once all that is completed, run `docker compose up -d`. Once the containers are started it will take about 2-3 minutes for first time bootstrapping to complete.
