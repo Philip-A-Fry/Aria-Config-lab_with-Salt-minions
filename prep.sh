@@ -27,7 +27,7 @@ then
 fi
 
 # Extract the installer bundle
-tar xf vRA_SaltStack_Config*.tar -C build
+tar xf vRA_SaltStack_Config* -C build
 
 # Copy the installers to build directories
 cp -r ./build/sse-installer/salt/sse/eapi_service ./build/raas/
