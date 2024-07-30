@@ -1,4 +1,4 @@
-version: '3'
+version: '3.9'
 services:
   salt-minion-1:
     image: salt-minion-image

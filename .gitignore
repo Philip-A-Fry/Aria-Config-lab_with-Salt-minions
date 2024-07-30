@@ -1,0 +1,8 @@
+vRA_SaltStack_Config-*.tar
+*.env
+*.rpm
+*.jinja
+*.sls
+*.whl
+/build/sse-installer
+sample-resource-types.raas
