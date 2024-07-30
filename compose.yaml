@@ -51,18 +51,18 @@ services:
       context: ./build/salt-minions
     container_name: salt-minion-2
 
-  salt-minion-3:
-    build:
-      context: ./build/salt-minions
-    container_name: salt-minion-3
+  # salt-minion-3:
+  #   build:
+  #     context: ./build/salt-minions
+  #   container_name: salt-minion-3
 
-  salt-minion-4:
-    build:
-      context: ./build/salt-minions
-    container_name: salt-minion-4
+  # salt-minion-4:
+  #   build:
+  #     context: ./build/salt-minions
+  #   container_name: salt-minion-4
 
-  salt-minion-5:
-    build:
-      context: ./build/salt-minions
-    container_name: salt-minion-5
+  # salt-minion-5:
+  #   build:
+  #     context: ./build/salt-minions
+  #   container_name: salt-minion-5
 

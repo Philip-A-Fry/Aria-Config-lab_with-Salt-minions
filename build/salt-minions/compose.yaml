@@ -12,23 +12,23 @@ services:
     networks:
       - aria-config-docker-lab_default
 
-  salt-minion-3:
-    image: salt-minion-image
-    container_name: salt-minion-3
-    networks:
-      - aria-config-docker-lab_default
+  # salt-minion-3:
+  #   image: salt-minion-image
+  #   container_name: salt-minion-3
+  #   networks:
+  #     - aria-config-docker-lab_default
 
-  salt-minion-4:
-    image: salt-minion-image
-    container_name: salt-minion-4
-    networks:
-      - aria-config-docker-lab_default
+  # salt-minion-4:
+  #   image: salt-minion-image
+  #   container_name: salt-minion-4
+  #   networks:
+  #     - aria-config-docker-lab_default
 
-  salt-minion-5:
-    image: salt-minion-image
-    container_name: salt-minion-5
-    networks:
-      - aria-config-docker-lab_default
+  # salt-minion-5:
+  #   image: salt-minion-image
+  #   container_name: salt-minion-5
+  #   networks:
+  #     - aria-config-docker-lab_default
 
 networks:
   aria-config-docker-lab_default:
