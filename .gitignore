@@ -1,3 +1,8 @@
+/data/master/pki
+/data/postgres
+/data/raas/pki
+/data/raas/initialized
+/data/raas/raas.secconf
 vRA_SaltStack_Config-*.tar
 *.env
 *.rpm
