@@ -6,7 +6,7 @@ Inspired by (ok, stolen from) seandjones92's project: https://github.com/seandjo
 Project to help run [Aria Automation Config](https://www.vmware.com/products/aria-automation/saltstack-config.html) in docker for testing and reference purposes. This assumes you have already paid for, or are otherwise entitled, to the installables for this product at [VMware Customer Connect](https://customerconnect.vmware.com/home). Environments created and managed by this project are not fit for production usage or anything resembling production usage, this is simply for self reference labs.
 
 ## Setup
-- To get started, download the `*.tar.gz` installer for EL9 from [VMware Customer Connect](https://customerconnect.vmware.com/home), then extract the `*.tar` file from it.  
+- To get started, download the `*.tar.gz` installer for EL9 from the [Broadcom Support Portal](https://support.broadcom.com/), then extract the `*.tar` file from it.  
 - Place the `*.tar` file in the root of the project - the "Aria-Config-lab_with-Salt-minions" directory.
 - Run the command (on Linux / macOS) to make the two bash scripts executable: `chmod +x reset.sh && chmod +x prep.sh`
 - Then run the `prep.sh` script. This will unpack the installer tar into the proper locations and will build an `.env` file for docker.
