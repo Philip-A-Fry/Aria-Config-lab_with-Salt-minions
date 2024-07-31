@@ -1,4 +1,5 @@
-# Aria Config Docker Lab
+# Aria-Config-lab_with-Salt-minions
+
 Inspired by (ok, stolen from) seandjones92's project: https://github.com/seandjones92/Aria-Config-Docker-Lab/tree/main
 - Added code to also deploy Salt Minions (Ubuntu 22 containers)
 
