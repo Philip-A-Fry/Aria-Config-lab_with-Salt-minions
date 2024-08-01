@@ -3,6 +3,7 @@ services:
 
   postgres:
     image: postgres:15.4
+    container_name: postgres-db
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASS}
@@ -11,6 +12,7 @@ services:
 
   redis:
     image: redis:7.2
+    container_name: redis-caching
     volumes:
       - ./data/redis:/usr/local/etc/redis
 
@@ -20,6 +22,7 @@ services:
       context: ./build/raas
       args:
         filename: ${RAAS_RPM_NAME}
+    container_name: raas-web-ui
     command: "-l debug"
     ports:
       - "8080:8080"
@@ -35,6 +38,7 @@ services:
       args:
         plugin_name: ${MASTER_PLUGIN_NAME}
         salt_version: 3006.7
+    container_name: salt-master
     command: "-l debug"
     volumes:
       - ./data/master:/etc/salt
