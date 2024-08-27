@@ -3,6 +3,8 @@
 /data/raas/pki
 /data/raas/initialized
 /data/raas/raas.secconf
+/data/redis/redis.conf
+
 vRA_SaltStack_Config-*.tar
 *.env
 *.rpm
